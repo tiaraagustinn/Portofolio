@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiara Agustin — Portfolio</title>
-  <meta name="description" content="Portfolio Tiara Agustin, Mahasiswi Informatika 2022. Berminat di bidang pengembangan perangkat lunak dan teknologi web.">
+  <meta name="description" content="Portfolio Tiara Agustin, Sarjana Informatika Universitas Syiah Kuala, IPK 3.72 Cum Laude. Minat di Rekayasa Perangkat Lunak.">
   <meta name="author" content="Tiara Agustin">
   <link rel="icon" href="https://i.etsystatic.com/34563151/r/il/0a3aa1/3991022299/il_1080xN.3991022299_c55j.jpg">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,8 @@
     <div class="logo">Tiara Agustin</div>
     <ul class="nav-links">
       <li><a href="#about" id="nav-about">About</a></li>
-      <li><a href="#experience" id="nav-experience">Skills</a></li>
+      <li><a href="#experience" id="nav-experience">Experience</a></li>
+      <li><a href="#skills" id="nav-skills">Skills</a></li>
       <li><a href="#projects" id="nav-projects">Projects</a></li>
       <li><a href="#contact" id="nav-contact">Contact</a></li>
     </ul>
@@ -33,7 +34,8 @@
       </div>
       <ul class="menu-links" id="mobile-menu">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </ul>
@@ -45,7 +47,7 @@
     <div class="profile-pic-wrapper reveal-left">
       <div class="profile-pic-ring">
         <div class="section__pic-container">
-          <img src="image/3.jpg" alt="Foto Tiara Agustin">
+          <img src="image/foto-profil.jpeg" alt="Foto Tiara Agustin">
         </div>
       </div>
     </div>
@@ -57,8 +59,10 @@
         <span class="typed-text" id="typed-text"></span><span class="cursor"></span>
       </p>
       <p class="hero-description">
-        Mahasiswi Informatika angkatan 2022 yang bersemangat dalam pengembangan teknologi.
-        Tertarik pada web development, software engineering, dan inovasi digital.
+        Sarjana Informatika <strong style="color:var(--accent-secondary)">Universitas Syiah Kuala</strong> dengan IPK
+        <strong style="color:var(--accent-secondary)">3,72 (Cum Laude)</strong>.
+        Berminat di bidang <strong style="color:var(--accent-secondary)">Rekayasa Perangkat Lunak</strong>
+        dan bersemangat membangun solusi teknologi yang berdampak nyata.
       </p>
 
       <div id="socials-container">
@@ -69,6 +73,9 @@
         <a href="mailto:tiaraagustin7072@gmail.com" class="social-btn" id="email-social-btn">
           <img src="image/email.png" alt="Email" class="social-icon">
           Email
+        </a>
+        <a href="tel:087811511517" class="social-btn" id="phone-social-btn">
+          📞 0878-1151-1517
         </a>
       </div>
 
@@ -94,42 +101,225 @@
 
     <div class="about-card reveal">
       <p>
-        Halo! Saya <strong style="color: var(--accent-secondary);">Tiara Agustin</strong>, mahasiswi Informatika angkatan 2022.
-        Saya berminat masuk ke jurusan Informatika karena tertarik dengan perkembangan teknologi dan belajar
-        berbagai aspek teknologi — mulai dari pengembangan perangkat lunak hingga keamanan sistem.
-        Portfolio ini saya buat untuk memenuhi tugas Laboratorium Pemrograman Berbasis Web.
+        Perkenalkan saya <strong style="color:var(--accent-secondary)">Tiara Agustin</strong>, lulusan program studi
+        Informatika <strong style="color:var(--accent-secondary)">Universitas Syiah Kuala</strong> dengan IPK
+        <strong style="color:var(--accent-secondary)">3,72 (Cum Laude)</strong> dengan minat
+        <strong style="color:var(--accent-secondary)">Rekayasa Perangkat Lunak</strong>. Saya berpengalaman sebagai
+        asisten praktikum <em>Basis Data Lanjut</em> dan <em>Teori Bahasa dan Automata</em>, serta terlibat dalam
+        berbagai proyek perkuliahan dan Kuliah Kerja Praktik di
+        <strong style="color:var(--accent-secondary)">Dinas Perhubungan Aceh</strong>. Memiliki kemampuan dalam
+        teamwork, project management, leadership, dan problem solving, serta mampu bekerja di bawah tekanan.
+        Saya juga mudah beradaptasi, bertanggung jawab, dan memiliki motivasi untuk terus belajar dan berkembang.
       </p>
     </div>
 
     <div class="about-stats reveal">
       <div class="stat-item">
-        <div class="stat-number">2022</div>
-        <div class="stat-label">Angkatan</div>
+        <div class="stat-number">3,72</div>
+        <div class="stat-label">IPK Cum Laude</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">6+</div>
-        <div class="stat-label">Tech Stack</div>
+        <div class="stat-number">2×</div>
+        <div class="stat-label">Teaching Assistant</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">3+</div>
-        <div class="stat-label">Projects</div>
+        <div class="stat-number">🏆</div>
+        <div class="stat-label">Juara 2 Web Programming</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Sertifikasi</div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="soft-skills-grid reveal">
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">🤝</span>
+        <span class="soft-skill-label">Teamwork</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">📋</span>
+        <span class="soft-skill-label">Project Management</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">👑</span>
+        <span class="soft-skill-label">Leadership</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">🧩</span>
+        <span class="soft-skill-label">Problem Solving</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">💬</span>
+        <span class="soft-skill-label">Communication Skills</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">⏱️</span>
+        <span class="soft-skill-label">Time Management</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">⚡</span>
+        <span class="soft-skill-label">Kerja di Bawah Tekanan</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">🔄</span>
+        <span class="soft-skill-label">Adaptif</span>
+      </div>
+      <div class="soft-skill-item">
+        <span class="soft-skill-icon">🎯</span>
+        <span class="soft-skill-label">Event Coordination</span>
       </div>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- ========== EXPERIENCE / SKILLS SECTION ========== -->
+  <!-- ========== EXPERIENCE SECTION ========== -->
   <section id="experience">
     <div class="reveal">
-      <span class="section-badge">✦ Kemampuan</span>
-      <h2 class="section-title">Hard Skills</h2>
+      <span class="section-badge">✦ Pengalaman Kerja</span>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">Pengalaman profesional dan akademik yang telah saya jalani</p>
+    </div>
+
+    <div class="timeline reveal">
+
+      <!-- TA Automata -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-tag">Teaching Assistant</span>
+            <span class="timeline-period">Sep 2025 – Des 2025</span>
+          </div>
+          <h3 class="timeline-title">Teaching Assistant — Automata and Language Theory</h3>
+          <p class="timeline-org">📍 Universitas Syiah Kuala · Kota Banda Aceh, Aceh, Indonesia</p>
+          <p class="timeline-desc">
+            Bertugas sebagai Teaching Assistant pada Laboratorium Teori Bahasa dan Automata dengan membantu dosen
+            dalam mendampingi mahasiswa selama kegiatan praktikum, menjelaskan konsep teori bahasa formal dan automata,
+            membimbing mahasiswa dalam penerapan <strong>Finite Automata (DFA/NFA)</strong>,
+            <strong>Regular Expression</strong>, dan <strong>Context-Free Grammar (CFG)</strong>, serta membantu
+            mahasiswa dalam menyelesaikan latihan dan tugas praktikum. Selain itu, melakukan pemeriksaan dan evaluasi
+            hasil praktikum serta memastikan kegiatan pembelajaran berjalan dengan baik sesuai modul dan materi yang diberikan.
+          </p>
+        </div>
+      </div>
+
+      <!-- TA Database -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-tag">Teaching Assistant</span>
+            <span class="timeline-period">Sep 2024 – Des 2025</span>
+          </div>
+          <h3 class="timeline-title">Teaching Assistant — Database II (Basis Data Lanjut)</h3>
+          <p class="timeline-org">📍 Universitas Syiah Kuala · Kota Banda Aceh, Aceh, Indonesia</p>
+          <p class="timeline-desc">
+            Bertugas sebagai Teaching Assistant pada Laboratorium Basis Data Lanjut dengan membantu dosen dalam
+            mendampingi mahasiswa selama kegiatan praktikum menggunakan <strong>Oracle Database</strong>,
+            menjelaskan konsep pengelolaan dan perancangan basis data, serta membimbing mahasiswa dalam penggunaan
+            <strong>SQL</strong> untuk pembuatan, pengelolaan, dan manipulasi data. Selain itu, membantu mahasiswa
+            dalam menyelesaikan latihan dan tugas praktikum, melakukan pemeriksaan serta evaluasi hasil praktikum,
+            dan memastikan kegiatan pembelajaran berjalan sesuai dengan modul dan materi yang diberikan.
+          </p>
+        </div>
+      </div>
+
+      <!-- KKP Dishub -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-tag">Programmer · KKP</span>
+            <span class="timeline-period">Agu 2025 – Sep 2025</span>
+          </div>
+          <h3 class="timeline-title">Programmer — Kuliah Kerja Praktik</h3>
+          <p class="timeline-org">📍 Dinas Perhubungan Aceh · Kota Banda Aceh, Aceh, Indonesia</p>
+          <p class="timeline-desc">
+            Melaksanakan KKP di Dinas Perhubungan Aceh dengan merancang dan mengembangkan sistem informasi berbasis
+            web untuk <strong>monitoring angkutan penyeberangan</strong> dan <strong>penilaian keselamatan pelayaran</strong>
+            yang kemudian dikembangkan sebagai proyek tugas akhir. Melakukan analisis kebutuhan sistem serta merancang
+            Use Case Diagram, Activity Diagram, ERD, struktur tabel basis data, dan mockup antarmuka menggunakan
+            <strong>Figma</strong>. Mengembangkan antarmuka sistem menggunakan
+            <strong>Next.js, React, TypeScript, HTML, CSS, dan Tailwind CSS</strong>, serta backend dan REST API
+            menggunakan <strong>Express.js</strong>. Mengelola basis data menggunakan <strong>MySQL</strong>.
+            Mengintegrasikan data cuaca laut dari BMKG dan data AIS untuk fitur monitoring. Mengembangkan dashboard
+            monitoring dengan visualisasi data dalam bentuk grafik serta fitur jadwal angkutan penyeberangan.
+            Menerapkan metode <strong>Fuzzy Logic Mamdani</strong> menggunakan parameter tinggi gelombang, kecepatan
+            angin, dan kecepatan arus untuk menentukan tingkat keselamatan pelayaran.
+          </p>
+          <div class="timeline-tech-stack">
+            <span class="tech-chip">Next.js</span>
+            <span class="tech-chip">React</span>
+            <span class="tech-chip">TypeScript</span>
+            <span class="tech-chip">Tailwind CSS</span>
+            <span class="tech-chip">Express.js</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">Figma</span>
+            <span class="tech-chip">Fuzzy Logic</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section id="education">
+    <div class="reveal">
+      <span class="section-badge">✦ Riwayat Pendidikan</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="education-grid reveal">
+
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <div class="edu-period">2022 – 2026</div>
+          <h3 class="edu-title">S1 — Universitas Syiah Kuala</h3>
+          <p class="edu-sub">Informatika · IPK <strong style="color:var(--accent-secondary)">3,72 (Cum Laude)</strong></p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">📚</div>
+        <div class="edu-body">
+          <div class="edu-period">2020 – 2022</div>
+          <h3 class="edu-title">SMA — MAN 3 Medan</h3>
+          <p class="edu-sub">IPA · Nilai <strong style="color:var(--accent-secondary)">94,8</strong></p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">🏫</div>
+        <div class="edu-body">
+          <div class="edu-period">2017 – 2020</div>
+          <h3 class="edu-title">SMP — SMP IT Nurul Hadina</h3>
+          <p class="edu-sub">Banda Aceh, Aceh</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills">
+    <div class="reveal">
+      <span class="section-badge">✦ Keahlian</span>
+      <h2 class="section-title">Skills</h2>
       <p class="section-subtitle">Teknologi dan tools yang saya kuasai</p>
     </div>
 
     <div class="skills-grid">
 
-      <!-- Frontend Card -->
+      <!-- Frontend -->
       <div class="skill-category reveal">
         <h3 class="skill-category-title">
           <span class="skill-category-icon">🎨</span>
@@ -138,83 +328,87 @@
         <div class="skills-list">
           <div class="skill-item">
             <span class="skill-emoji">🟧</span>
-            <div class="skill-info">
-              <h3>HTML</h3>
-              <p>Intermediate</p>
-            </div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-emoji">🟦</span>
-            <div class="skill-info">
-              <h3>CSS</h3>
-              <p>Intermediate</p>
-            </div>
+            <div class="skill-info"><h3>HTML & CSS</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
             <span class="skill-emoji">🟨</span>
-            <div class="skill-info">
-              <h3>JavaScript</h3>
-              <p>Intermediate</p>
-            </div>
+            <div class="skill-info"><h3>JavaScript</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
             <span class="skill-emoji">⚛️</span>
-            <div class="skill-info">
-              <h3>React</h3>
-              <p>Intermediate</p>
-            </div>
+            <div class="skill-info"><h3>React</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
-            <span class="skill-emoji">💚</span>
-            <div class="skill-info">
-              <h3>Vue.js</h3>
-              <p>Intermediate</p>
-            </div>
+            <span class="skill-emoji">▲</span>
+            <div class="skill-info"><h3>Next.js</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
-            <span class="skill-emoji">🟣</span>
-            <div class="skill-info">
-              <h3>Bootstrap</h3>
-              <p>Intermediate</p>
-            </div>
+            <span class="skill-emoji">💨</span>
+            <div class="skill-info"><h3>Tailwind CSS</h3><p>Intermediate</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🔷</span>
+            <div class="skill-info"><h3>TypeScript</h3><p>Intermediate</p></div>
           </div>
         </div>
       </div>
 
-      <!-- Tools Card -->
+      <!-- Backend -->
       <div class="skill-category reveal">
         <h3 class="skill-category-title">
-          <span class="skill-category-icon">🛠️</span>
-          Developer Tools
+          <span class="skill-category-icon">⚙️</span>
+          Backend & Database
         </h3>
         <div class="skills-list">
           <div class="skill-item">
-            <span class="skill-emoji">💙</span>
-            <div class="skill-info">
-              <h3>VS Code</h3>
-              <p>Primary IDE</p>
-            </div>
+            <span class="skill-emoji">🟩</span>
+            <div class="skill-info"><h3>Node.js</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
-            <span class="skill-emoji">🔶</span>
-            <div class="skill-info">
-              <h3>IntelliJ IDEA</h3>
-              <p>Java IDE</p>
-            </div>
+            <span class="skill-emoji">🚀</span>
+            <div class="skill-info"><h3>Express.js</h3><p>Intermediate</p></div>
           </div>
           <div class="skill-item">
-            <span class="skill-emoji">🤖</span>
-            <div class="skill-info">
-              <h3>Android Studio</h3>
-              <p>Mobile Dev</p>
-            </div>
+            <span class="skill-emoji">🐬</span>
+            <div class="skill-info"><h3>MySQL</h3><p>Intermediate</p></div>
           </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🗄️</span>
+            <div class="skill-info"><h3>Basis Data</h3><p>Intermediate</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🔌</span>
+            <div class="skill-info"><h3>REST API</h3><p>Intermediate</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Design -->
+      <div class="skill-category reveal">
+        <h3 class="skill-category-title">
+          <span class="skill-category-icon">🛠️</span>
+          Tools & Design
+        </h3>
+        <div class="skills-list">
           <div class="skill-item">
             <span class="skill-emoji">🐙</span>
-            <div class="skill-info">
-              <h3>GitHub</h3>
-              <p>Version Control</p>
-            </div>
+            <div class="skill-info"><h3>GitHub</h3><p>Version Control</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🖼️</span>
+            <div class="skill-info"><h3>Figma</h3><p>UI/UX Design</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🎨</span>
+            <div class="skill-info"><h3>Canva</h3><p>Design</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">💙</span>
+            <div class="skill-info"><h3>VS Code</h3><p>Primary IDE</p></div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-emoji">🪟</span>
+            <div class="skill-info"><h3>Microsoft Word</h3><p>Documentation</p></div>
           </div>
         </div>
       </div>
@@ -229,22 +423,26 @@
     <div class="reveal">
       <span class="section-badge">✦ Karya Saya</span>
       <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Beberapa project yang sedang atau sudah saya kerjakan</p>
+      <p class="section-subtitle">Project dari perkuliahan dan Kuliah Kerja Praktik</p>
     </div>
 
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <div class="project-card reveal">
         <div class="project-img-wrapper">
-          <img src="image/1.png" alt="Project 1" class="project-img">
+          <img src="image/1.png" alt="Sistem Monitoring Angkutan Penyeberangan" class="project-img">
         </div>
         <div class="project-body">
-          <span class="project-tag">Web App</span>
-          <h3 class="project-title">Web Portfolio</h3>
+          <span class="project-tag">KKP · Full Stack</span>
+          <h3 class="project-title">Sistem Monitoring Angkutan Penyeberangan</h3>
           <p class="project-description">
-            Portfolio website pribadi yang dibangun menggunakan HTML, CSS, dan JavaScript dengan desain modern dan responsif.
+            Sistem informasi berbasis web untuk monitoring angkutan penyeberangan dan penilaian keselamatan pelayaran
+            di Dinas Perhubungan Aceh. Menggunakan Fuzzy Logic Mamdani, integrasi data BMKG & AIS, dan dashboard
+            visualisasi data real-time.
           </p>
+          <div class="project-tech-tags">
+            <span>Next.js</span><span>React</span><span>Express.js</span><span>MySQL</span>
+          </div>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tiaraagustinn'" id="project1-github-btn">
               ⬡ GitHub
@@ -256,17 +454,20 @@
         </div>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card reveal">
         <div class="project-img-wrapper">
-          <img src="image/2.png" alt="Project 2" class="project-img">
+          <img src="image/2.png" alt="Project Akademik USK" class="project-img">
         </div>
         <div class="project-body">
-          <span class="project-tag">Frontend</span>
-          <h3 class="project-title">UI/UX Design Project</h3>
+          <span class="project-tag">Akademik · Web App</span>
+          <h3 class="project-title">Project Perkuliahan Informatika</h3>
           <p class="project-description">
-            Implementasi desain antarmuka pengguna yang bersih dan intuitif menggunakan teknologi web modern.
+            Kumpulan project akademik selama studi di Informatika USK, mencakup pengembangan perangkat lunak,
+            sistem basis data, dan berbagai mata kuliah seperti Pemrograman Web, Basis Data, dan Rekayasa Perangkat Lunak.
           </p>
+          <div class="project-tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+          </div>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tiaraagustinn'" id="project2-github-btn">
               ⬡ GitHub
@@ -278,17 +479,20 @@
         </div>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card reveal">
         <div class="project-img-wrapper">
-          <img src="image/Screenshot (1407).png" alt="Project 3" class="project-img">
+          <img src="image/Screenshot (1407).png" alt="Web Portfolio" class="project-img">
         </div>
         <div class="project-body">
-          <span class="project-tag">Informatika</span>
-          <h3 class="project-title">Academic Project</h3>
+          <span class="project-tag">Personal · Portfolio</span>
+          <h3 class="project-title">Web Portfolio Pribadi</h3>
           <p class="project-description">
-            Project akademik dalam rangka Laboratorium Pemrograman Berbasis Web, menampilkan kemampuan full-stack dasar.
+            Portfolio website pribadi yang dibangun menggunakan HTML, CSS, PHP, dan JavaScript dengan desain
+            dark mode modern, animasi scroll reveal, dan glassmorphism sebagai tugas Laboratorium Pemrograman Web.
           </p>
+          <div class="project-tech-tags">
+            <span>HTML</span><span>CSS</span><span>PHP</span><span>JavaScript</span>
+          </div>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/tiaraagustinn'" id="project3-github-btn">
               ⬡ GitHub
@@ -305,12 +509,68 @@
 
   <div class="section-divider"></div>
 
+  <!-- ========== CERTIFICATIONS & ACHIEVEMENTS ========== -->
+  <section id="certifications">
+    <div class="reveal">
+      <span class="section-badge">✦ Sertifikasi & Pencapaian</span>
+      <h2 class="section-title">Certifications & Achievements</h2>
+    </div>
+
+    <div class="cert-achieve-grid reveal">
+
+      <!-- Achievements -->
+      <div class="cert-group">
+        <h3 class="cert-group-title">🏆 Pencapaian</h3>
+        <div class="cert-card achievement-card">
+          <div class="cert-icon">🥈</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Juara 2 — Lomba Web Programming</h4>
+            <p class="cert-issuer">Kompetisi Web Programming</p>
+            <span class="cert-date">2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cert-group">
+        <h3 class="cert-group-title">📜 Sertifikasi</h3>
+        <div class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Workshop Membuat Website Tanpa Coding "Tips And Trick Penggunaan SEO"</h4>
+            <p class="cert-issuer">Institut Teknologi PLN</p>
+            <span class="cert-date">Januari 2024</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Deep Dive into AI &amp; The Future of Work</h4>
+            <p class="cert-issuer">Skilvul</p>
+            <span class="cert-date">Desember 2023</span>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">✏️</div>
+          <div class="cert-body">
+            <h4 class="cert-title">Workshop Graphic Design With Adobe Illustrator</h4>
+            <p class="cert-issuer">Universitas Syiah Kuala</p>
+            <span class="cert-date">Oktober 2023</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ========== CONTACT SECTION ========== -->
   <section id="contact">
     <div class="reveal">
-      <span class="section-badge">✦ Hubungi</span>
+      <span class="section-badge">✦ Hubungi Saya</span>
       <h2 class="section-title">Contact Me</h2>
-      <p class="section-subtitle">Jangan ragu untuk menghubungi saya!</p>
+      <p class="section-subtitle">Jangan ragu untuk menghubungi saya kapan saja!</p>
     </div>
 
     <div class="contact-grid reveal">
@@ -329,6 +589,14 @@
           <div class="contact-value">@tiaraagustinn</div>
         </div>
       </a>
+
+      <a href="tel:087811511517" class="contact-card" id="contact-phone-btn">
+        <div class="contact-icon-wrapper">📞</div>
+        <div class="contact-text">
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">0878-1151-1517</div>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -338,11 +606,12 @@
       <div class="footer-logo">Tiara Agustin</div>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <p class="footer-copy">© 2024 Tiara Agustin. All rights reserved.</p>
+      <p class="footer-copy">© 2025 Tiara Agustin · S.Kom · Informatika USK</p>
     </div>
   </footer>
 

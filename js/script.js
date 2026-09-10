@@ -83,10 +83,11 @@ revealElements.forEach((el) => revealObserver.observe(el));
    ================================ */
 const typedTextEl = document.getElementById("typed-text");
 const textOptions = [
-  "Mahasiswi Informatika 2022",
-  "Frontend Developer",
-  "Web Enthusiast",
-  "Tech Explorer",
+  "Sarjana Informatika USK",
+  "Software Engineer",
+  "Full Stack Developer",
+  "IPK 3,72 — Cum Laude",
+  "Juara 2 Web Programming",
 ];
 
 let textIndex = 0;
