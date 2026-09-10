@@ -47,7 +47,7 @@
     <div class="profile-pic-wrapper reveal-left">
       <div class="profile-pic-ring">
         <div class="section__pic-container">
-          <img src="image/foto-profil.jpeg" alt="Foto Tiara Agustin">
+          <img src="image/profil.jpeg" alt="Foto Tiara Agustin">
         </div>
       </div>
     </div>
