@@ -534,30 +534,49 @@
       <!-- Certifications -->
       <div class="cert-group">
         <h3 class="cert-group-title">📜 Sertifikasi</h3>
+
         <div class="cert-card">
           <div class="cert-icon">🌐</div>
           <div class="cert-body">
             <h4 class="cert-title">Workshop Membuat Website Tanpa Coding "Tips And Trick Penggunaan SEO"</h4>
             <p class="cert-issuer">Institut Teknologi PLN</p>
-            <span class="cert-date">Januari 2024</span>
+            <div class="cert-footer">
+              <span class="cert-date">Januari 2024</span>
+              <button class="cert-view-btn" onclick="openCertModal('sertifikat/sertif-seo.pdf', 'Workshop SEO — Institut Teknologi PLN')" id="cert-view-1">
+                📄 Lihat Sertifikat
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="cert-card">
           <div class="cert-icon">🤖</div>
           <div class="cert-body">
             <h4 class="cert-title">Deep Dive into AI &amp; The Future of Work</h4>
             <p class="cert-issuer">Skilvul</p>
-            <span class="cert-date">Desember 2023</span>
+            <div class="cert-footer">
+              <span class="cert-date">Desember 2023</span>
+              <button class="cert-view-btn" onclick="openCertModal('sertifikat/sertif-ai.pdf', 'Deep Dive into AI — Skilvul')" id="cert-view-2">
+                📄 Lihat Sertifikat
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="cert-card">
           <div class="cert-icon">✏️</div>
           <div class="cert-body">
             <h4 class="cert-title">Workshop Graphic Design With Adobe Illustrator</h4>
             <p class="cert-issuer">Universitas Syiah Kuala</p>
-            <span class="cert-date">Oktober 2023</span>
+            <div class="cert-footer">
+              <span class="cert-date">Oktober 2023</span>
+              <button class="cert-view-btn" onclick="openCertModal('sertifikat/sertif-illustrator.pdf', 'Workshop Adobe Illustrator — USK')" id="cert-view-3">
+                📄 Lihat Sertifikat
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
@@ -614,6 +633,27 @@
       <p class="footer-copy">© 2025 Tiara Agustin · S.Kom · Informatika USK</p>
     </div>
   </footer>
+
+  <!-- ========== PDF MODAL ========== -->
+  <div id="cert-modal" class="cert-modal-overlay" onclick="closeCertModal(event)">
+    <div class="cert-modal-box">
+      <div class="cert-modal-header">
+        <span class="cert-modal-title" id="cert-modal-title">Sertifikat</span>
+        <button class="cert-modal-close" onclick="closeCertModalDirect()" id="cert-close-btn" title="Tutup">
+          ✕
+        </button>
+      </div>
+      <div class="cert-modal-body">
+        <iframe id="cert-pdf-iframe" src="" title="PDF Sertifikat"></iframe>
+        <div class="cert-modal-fallback" id="cert-modal-fallback">
+          <p>📄 Browser tidak dapat menampilkan PDF secara langsung.</p>
+          <a id="cert-download-link" href="" download class="btn btn-primary" style="margin-top:1rem; display:inline-flex;">
+            ⬇ Download Sertifikat
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

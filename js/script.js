@@ -198,3 +198,56 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+/* ================================
+   PDF CERT MODAL
+   ================================ */
+const certModal    = document.getElementById("cert-modal");
+const certIframe   = document.getElementById("cert-pdf-iframe");
+const certTitle    = document.getElementById("cert-modal-title");
+const certFallback = document.getElementById("cert-modal-fallback");
+const certDlLink   = document.getElementById("cert-download-link");
+
+function openCertModal(pdfPath, title) {
+  // Set title & src
+  certTitle.textContent = title;
+  certIframe.src = pdfPath;
+  certDlLink.href = pdfPath;
+
+  // Hide fallback initially
+  certFallback.classList.remove("show");
+  certIframe.style.display = "block";
+
+  // Show modal
+  certModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  // Detect load error → show fallback download
+  certIframe.onerror = function () {
+    certIframe.style.display = "none";
+    certFallback.classList.add("show");
+  };
+}
+
+function closeCertModalDirect() {
+  certModal.classList.remove("active");
+  document.body.style.overflow = "";
+  // Delay clearing src so close animation plays smoothly
+  setTimeout(() => {
+    certIframe.src = "";
+  }, 300);
+}
+
+// Close when clicking the dark overlay (outside modal box)
+function closeCertModal(e) {
+  if (e.target === certModal) {
+    closeCertModalDirect();
+  }
+}
+
+// Close with Escape key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && certModal.classList.contains("active")) {
+    closeCertModalDirect();
+  }
+});
