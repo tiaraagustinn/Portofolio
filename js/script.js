@@ -209,21 +209,48 @@ const certFallback = document.getElementById("cert-modal-fallback");
 const certDlLink   = document.getElementById("cert-download-link");
 
 function openCertModal(pdfPath, title) {
-  // Set title & src
+  // Set title & download link
   certTitle.textContent = title;
-  certIframe.src = pdfPath;
   certDlLink.href = pdfPath;
 
-  // Hide fallback initially
+  // Reset state
   certFallback.classList.remove("show");
   certIframe.style.display = "block";
+  certIframe.src = "";
 
   // Show modal
   certModal.classList.add("active");
   document.body.style.overflow = "hidden";
 
-  // Detect load error → show fallback download
+  // Set src after brief delay so reset takes effect
+  setTimeout(() => {
+    certIframe.src = pdfPath;
+  }, 50);
+
+  // Fallback: if iframe doesn't load within 5s, show download button
+  let fallbackTimer = setTimeout(() => {
+    // If still no content, assume PDF blocked by browser
+    try {
+      const iframeDoc = certIframe.contentDocument || certIframe.contentWindow.document;
+      if (!iframeDoc || iframeDoc.body.innerHTML === "") {
+        certIframe.style.display = "none";
+        certFallback.classList.add("show");
+      }
+    } catch (e) {
+      // Cross-origin or blocked — show fallback
+      certIframe.style.display = "none";
+      certFallback.classList.add("show");
+    }
+  }, 5000);
+
+  // Clear timer if iframe loads successfully
+  certIframe.onload = function () {
+    clearTimeout(fallbackTimer);
+  };
+
+  // Detect explicit load error
   certIframe.onerror = function () {
+    clearTimeout(fallbackTimer);
     certIframe.style.display = "none";
     certFallback.classList.add("show");
   };
